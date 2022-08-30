@@ -1,0 +1,69 @@
+<!-- 
+	项目内容：翻译或转译
+	创建时间：2017/3/28
+	修改时间：2017/8/11
+-->
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+		<meta name="Generator" content="涅小子">
+		<meta name="Author" content="1154191654@qq.com">
+		<meta name="Keywords" content="友睦宇恒,希无夏逸,">
+		<meta name="Description" content="相信自己，你将打破目前跳蚤效应的状况！">
+		<title>涅希◈翻译</title>
+		<!-- 标题图标 -->
+		<link href="../image/Niexi.png" rel="shortcut icon"/>
+		<style type="text/css">
+			*{
+				margin:0;
+				padding:0;
+			}
+			body{
+				background:#cce8cf;
+				font-size:18px;
+				font-family:"Microsoft YaHei";
+			}
+		</style>
+		
+		<!--差3个js-->
+<!-- <script src="../jq/jquery-1-7-2.js"></script>
+		<script src="../js/Jq-NieXiCodeWay-20170504.js"></script> -->
+		<!-- 调用父页面的方法 -->
+		<script type="text/javascript">
+		function getParentContent(ForB){
+			try{
+				window.parent.NieXiCodeFn("EnterText","Nx",ForB);
+			}catch(e){
+				//问题：方法存在问题或者未连接服务器
+				//解决方案：连接服务器并登陆默认网址http://localhost/
+				alert("你未获得管理员权限，请联系管理员。");
+			}
+		}
+		</script>
+	</head>
+	<body>
+		<!-- 标题显示 -->
+		<div style="position:fixed;top:0px;left:68px;width:500px;">
+			<img src="../image/Niexi.png" title="涅希代码翻译"  style="width:50px;height:50px;"/>
+			<p style="position:absolute;top:20px;left:54px;">
+				<span style="font-weight:bold;">涅希◈翻译<span>
+				<span style="color:#b4b4b4;font-size:14px;">———为装逼而生的奢侈软件,你值得拥有！</span>
+			</p>
+		</div>
+		<!-- 输入框和显示框 -->
+		<div style="position:fixed;top:79px;left:68px;width:500px;height:500px;">
+			<!-- <div contenteditable="true" style="width:530px;height:187px;border:1px solid #99ccff;border-radius:3px;padding:12px 8px 5px;font-size:17px;" id="enterTxt"></div> -->
+			<!-- <input type="text" style="border:1px solid red;" id="enterText"/> -->
+			<textarea id="EnterText" dir="ltr" tabindex="1" wrap="SOFT" placeholder="请输入要翻译的代码/编译的文字" style="width:530px;height:187px;resize:none;border:1px solid #99ccff;border-radius:3px;padding:12px 8px 5px;font-size:17px;"></textarea>
+			<input type="button" value="涅希代码翻译" id="NieXiTranslationF" style="width:150px;height:30px;border:1px solid #fff;border-radius:10px;font-size:17px;color:#fff;background:#2194F8;margin:18px 0 18px 78px;cursor:pointer;"  onclick="getParentContent('F')" />
+			<input type="button" value="涅希代码编译" id="NieXiTranslationB" style="width:150px;height:30px;border:1px solid #fff;border-radius:10px;font-size:17px;color:#fff;background:#2194F8;margin:18px 0 18px 84px;cursor:pointer;" onclick="getParentContent('B')" />
+			<!--
+				word-wrap:break-word;强制换行
+				font:16px/1.5 '\5B8B\4F53',arial,tahoma,sans-serif为了让中文引号显示出来
+				'\5B8B\4F53'宋体
+			-->
+			<div style="width:530px;height:187px;border:1px solid #99ccff;    border-radius:3px;padding:5px 8px 5px;overflow-y:auto;word-wrap:break-word;font:18px/1.5 '\5B8B\4F53',arial,tahoma,sans-serif" id="NieXiShow"></div>
+		</div>
+	</body>
+</html>
